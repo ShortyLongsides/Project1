@@ -1,0 +1,23 @@
+<html>
+
+<h1>All my Pokemon</h1>
+
+{{#each pokemon}}
+  <dl><h2><b>{{this.name}}</h2></b></dl>
+    <dt>Type:</dt>
+        <dd>{{this.type}}</dd>
+    <dt>HP:</dt>
+        <dd>{{this.hp}}</dd>
+    <dt>Trade:</dt>
+        {{#if this.willTrade}}
+            <dd>Will consider trade</dd>
+        {{else}}
+            <dd>Not for trade</dd>
+        {{/if}}
+    <dt>Price:</dt>
+        <dd>{{this.price}}</dd>
+{{/each}}
+
+
+
+</html>
